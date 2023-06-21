@@ -9,6 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alojamientos | Villa la Angostura</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Montserrat:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Montserrat:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <!--FIN HEAD-->
 
@@ -16,27 +32,16 @@
 
 <body>
     <!--Header-->
-    <header>
+    <header class="header">
+
         <!--Logo-->
         <div>
-            <a href="../index.html"><img src="../imagenes/vla-logo.png" alt="logo-vla"></a>
+            <h1>Turismo VLA</h1>
         </div>
         <!--Fin Logo-->
 
-        <!--Iconos de redes sociales-->
-        <div>
-            <ul>
-                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"> Instagram </a> </li>
-                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"> Facebook
-                    </a> </li>
-                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> Youtube </a>
-                </li>
-            </ul>
-        </div>
-        <!--Fin Iconos de redes sociales-->
-
         <!--Nav-->
-        <nav>
+        <nav class="header__nav">
             <ul>
                 <li> <a href="../index.html">HOME</a></li>
                 <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
@@ -45,25 +50,37 @@
                 <li><a href="./contacto.html">CONTACTO</a></A></li>
             </ul>
         </nav>
-        <!--Fin Nav-->
+        <!--Iconos de redes sociales-->
+        <div class="header__iconos">
+            <ul>
+                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"><i class="bi bi-instagram"></i>
+                    </a> </li>
+                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"><i
+                            class="bi bi-facebook"></i>
+                    </a> </li>
+                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> <i
+                            class="bi bi-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
     </header>
     <!--Fin Header-->
 
     <!--banner y h1-->
-    <div>
-        <h1>ALOJAMIENTOS</h1>
-        <img src="../imagenes/Alojamientos.webp" alt="Alojamientos">
+    <div class="banner alojamientos-banner">
+        <h2>ALOJAMIENTOS</h2>
     </div>
     <!--fin banner y h1-->
 
     <!--Main-->
-    <main>
+    <main class="main">
         <section>
-            <article>
+            <article class="main__articulo">
                 <a href="https://promociones.bahiamanzano.com/" target="_blank">
-                    <h2>Bahia Manzano Resort</h2>
+                    <h3>Bahia Manzano Resort</h3>
                 </a>
-                <img src="../imagenes/resort-manzano.jpg" alt="imagen-resort">
+                <img class="main__img" src="../imagenes/resort-manzano.jpg" alt="imagen-resort">
                 <p>
                     Localizado en una bahía frente al lago Nahuel Huapi y rodeado de naturaleza, el Resort ofrece amplia
                     variedad de servicios y amenidades para disfrutar durante todo el año. Cuenta con unidades tipo
@@ -80,11 +97,11 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="main__articulo">
                 <a href="https://correntoso.com/" target="_blank">
-                    <h2>Correntoso Lake & River Hotel</h2>
+                    <h3>Correntoso Lake & River Hotel</h3>
                 </a>
-                <img src="../imagenes/hotel-correntoso.jpg" alt="hotel-correntoso">
+                <img class="main__img" src="../imagenes/hotel-correntoso.jpg" alt="hotel-correntoso">
 
                 <p>
                     Fundado en 1917 por Primo Capraro y Rosa Maier, Correntoso nació como un refugio para pescadores y
@@ -103,15 +120,15 @@
                 </ul>
             </article>
 
-            <article>
-                <a href="http://www.elmercadoangostura.com.ar/index.html" target="_blank">
-                    <h2>Departamentos de el Mercado</h2>
+            <article class="main__articulo">
+                <a class="main__img" href="http://www.elmercadoangostura.com.ar/index.html" target="_blank">
+                    <h3>Departamentos de el Mercado</h3>
                 </a>
-                <img src="../imagenes/mercado-vla.jpg" alt="mercado-vla">
+                <img class="main__img" src="../imagenes/mercado-vla.jpg" alt="mercado-vla">
 
                 <p>
-                    Departamentos tipo loft de estilo moderno, hechos en su mayor parte con materiales reciclados.</p>
-                <p>Respetando el clásico estilo arquitectónico de la ciudad de madera y piedra, hoy el Mercado
+                    Departamentos tipo loft de estilo moderno, hechos en su mayor parte con materiales reciclados.
+                    Respetando el clásico estilo arquitectónico de la ciudad de madera y piedra, hoy el Mercado
                     intenta
                     recuperar esos tiempos gloriosos. Lo antiguo y lo nuevo se unen para generar un nuevo atractivo
                     turístico del que está hablando todo el mundo que llega a esta ciudad.</p>
@@ -127,21 +144,21 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="main__articulo">
                 <a href="http://hosteriapuertosur.com.ar/puerto/" target="_blank">
-                    <h2>Hostería Puerto Sur</h2>
+                    <h3>Hostería Puerto Sur</h3>
                 </a>
-                <img src="../imagenes/hosteria-puerto-sur.jpeg" alt="hosteria-pueerto-sur">
+                <img class="main__img" src="../imagenes/hosteria-puerto-sur.jpeg" alt="hosteria-pueerto-sur">
 
                 <p>
                     Ubicación privilegiada en la Península de Puerto Manzano, sumado al diseño del lugar, te
                     permitirá
                     disfrutar de una postal majestuosa y una imponente vista a los cerros desde cualquier parte de
                     la
-                    hostería.</p>
-                <p></p>Cuenta con 14 habitaciones dobles, todas con frigo-bar, caja de seguridad y vista al lago,
-                donde
-                podrás relajarte en un hidromasaje doble, rodeado de grandes ventanales y techo vidriado.</p>
+                    hostería.
+                    Cuenta con 14 habitaciones dobles, todas con frigo-bar, caja de seguridad y vista al lago,
+                    donde
+                    podrás relajarte en un hidromasaje doble, rodeado de grandes ventanales y techo vidriado.</p>
 
                 <ul>
                     <li>
@@ -154,11 +171,11 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="main__articulo">
                 <a href="https://naranjo-en-flor.hotelesenpatagonia.com/es/#main" target="_blank">
-                    <h2>Hostería Naranjo en Flor</h2>
+                    <h3>Hostería Naranjo en Flor</h3>
                 </a>
-                <img src="../imagenes/naranjo-flor.jpg" alt="naranjo-flor">
+                <img class="main__img" src="../imagenes/naranjo-flor.jpg" alt="naranjo-flor">
 
                 <p>
                     La Hostería Naranjo en Flor, una cálida hostería de 8 habitaciones en total, esta enclavada en
@@ -182,20 +199,13 @@
     <!--Fin Main-->
 
     <!--footer-->
-    <footer>
-        <ul>
-            <li> <a href="../index.html">HOME</a></li>
-            <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
-            <li><a href="./alojamientos.html">ALOJAMIENTOS</a></li>
-            <li><a href="./galeria.html">GALERIA</a></A></li>
-            <li><a href="./contacto.html">CONTACTO</a></A></li>
-        </ul>
+    <footer class="footer">
 
         <div>
-            <img src="../imagenes/vla-logo.png" alt="logo-vla">
+            <img src="../imagenes/vla-logo.png" alt="logo-vla" class="footer__logo">
         </div>
 
-        <address>
+        <address class="footer__adress">
             Secretaría de Turismo Municipal de Villa La Angostura.
             Av. Arrayanes 999 - Villa la Angostura - Neuquén.
             Tel: (0294) 4494 1112

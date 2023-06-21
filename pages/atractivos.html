@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atractivos | Villa la Angostura</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Montserrat:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <!--BODY-->
@@ -14,28 +22,16 @@
 <body>
 
     <!--header-->
-    <header>
+    <header class="header">
+
         <!--logo-->
         <div>
-            <a href=" ../index.html"> <img src="../imagenes/vla-logo.png" alt="logo-vla"> </a>
+            <h1>Turismo VLA</h1>
         </div>
         <!--fin logo-->
 
-        <!--redes sociales (resta saber como insertar iconos)-->
-        <div>
-            <ul>
-                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"> Instagram </a> </li>
-                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"> Facebook
-                    </a>
-                </li>
-                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> Youtube </a>
-                </li>
-            </ul>
-        </div>
-        <!-- fin redes sociales (resta saber como insertar iconos)-->
-
         <!-- barra de navegacion-->
-        <nav>
+        <nav class="header__nav">
             <ul>
                 <li> <a href="../index.html">HOME</a></li>
                 <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
@@ -45,21 +41,38 @@
             </ul>
         </nav>
         <!--fin barra de navegacion-->
+
+        <!--redes sociales (resta saber como insertar iconos)-->
+        <div class="header__iconos">
+            <ul>
+                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"> <i
+                            class="bi bi-instagram"></i></a> </li>
+                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"></a> <i
+                        class="bi bi-facebook"></i></a> </li>
+                </a>
+                </li>
+                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> <i
+                            class="bi bi-youtube"></i></a> </li></a>
+                </li>
+            </ul>
+        </div>
+        <!-- fin redes sociales (resta saber como insertar iconos)-->
     </header>
     <!--fin header-->
 
 
     <!--banner y h1-->
-    <div>
-        <h1>ATRACTIVOS</h1>
-        <img src="../imagenes/banner-atractivos.jpg" alt="banner-home">
+    <div class="banner atractivos-banner">
+        <h2>ATRACTIVOS</h2>
     </div>
     <!-- fin banner y h1-->
 
     <!-- inicio main-->
-    <main>
-        <section>
-            <h2>RECOMENDADOS DE VLA</h2>
+    <main class="main atractivos">
+        <div class="titulo">
+            <h3>RECOMENDADOS DE VLA</h3>
+        </div>
+        <article class="main__articulo parrafo ">
             <p>
                 Seguramente usted eligió Villa La Angostura atraído por la posibilidad de disfrutar sus vacaciones
                 en
@@ -69,85 +82,84 @@
                 paisano,
                 y es probable que ésto le despierte el interés por conocer algo más acerca de su gente, su pasado y
                 sus
-                costumbres.</p>
-            <p>Esta zona ha sido habitada desde hace aproximadamente 10.000 años. Desde entonces indígenas,
+                costumbres.
+                Esta zona ha sido habitada desde hace aproximadamente 10.000 años. Desde entonces indígenas,
                 conquistadores, misioneros y colonos han ido dejando su impronta.
             </p>
-            <article>
-                <h3>Bosque de Arrayanes</h3>
-                <img src="../imagenes/bosque-arayanes.jpg" alt="Arrayanes">
-                <p>
-                    El único arrayanal arbóreo del mundo que puede ser visitado, se encuentra en el extremo sur de la
-                    Península de Quetrihue, dentro del Parque Nacional Los Arrayanes. </p>
-                <p>Este Bosque exhibe ejemplares de hasta 25 metros, cuya edad promedio es entre 160 y 250 años;
-                    habiendo ejemplares que alcanzan los 600 años.
-                </p>
-            </article>
-
-            <article>
-                <h3>Puerto Manzano</h3>
-                <img src="../imagenes/manzano.jpg" alt="Manzano">
-                <p>
-                    Es uno de los barrios en el que registra la mayor concentración de alojamientos. La arquitectura
-                    armoniza con las espectaculares vistas que ofrece la Bahía de Manzano. </p>
-                <p> El trazado de sus calles, la frondosa arboleda, y la armonía entre la exquisita arquitectura andina
-                    y el paisaje, invitan a recorrerlo ya sea a pie o en auto. </p>
-                <p>La Península posee a ambos lados, pequeñas playa de arena que se intercalan con formaciones rocosas
-                    distribuidas a lo largo de su perímetro.</p>
-            </article>
-
-            <article>
-                <h3>Ruta de los 7 lagos</h3>
-                <img src="../imagenes/sietelagos.png" alt="siete-lagos">
-                <p>
-                    El nombre de Camino de los 7 lagos se debe al número de lagos que se pueden apreciar durante el
-                    recorrido. Ordenados desde Villa La Angostura hacia San Martín de los Andes, los lagos que conforman
-                    el «Camino de los 7 Lagos» son: Lago Espejo, Lago Correntoso, Lago Escondido, Lago Villarino, Lago
-                    Falkner, Lago Machónico y Lago Lácar.
-                </p>
-            </article>
+        </article>
 
 
-            <article>
-                <h3>Rio Correntoso</h3>
-                <img src="../imagenes/correntoso.jpg" alt="correntoso">
-                <p>
-                    Una postal de Villa la Angostura! Compuesta por un río muy pequeño (el Correntoso) que nace en el
-                    lago Correntoso y desemboca en el lago Nahuel Huapi. Se dice que es uno de los ríos más cortos del
-                    mundo, ya que tiene una longitud total de unos 200 m dependiendo de las lluvias anuales.
-                </p>
-            </article>
+        <article class="main__articulo bosque">
+            <h4>Bosque de Arrayanes</h4>
+            <img class="main__img" src="../imagenes/bosque-arayanes.jpg" alt="Arrayanes">
+            <p>
+                El único arrayanal arbóreo del mundo que puede ser visitado, se encuentra en el extremo sur de
+                la
+                Península de Quetrihue, dentro del Parque Nacional Los Arrayanes.
+                Este Bosque exhibe ejemplares de hasta 25 metros, cuya edad promedio es entre 160 y 250 años;
+                habiendo ejemplares que alcanzan los 600 años.
+            </p>
+        </article>
 
-            <article>
-                <h3>Cerro Bayo</h3>
-                <img src="../imagenes/bayo.jpg" alt="cerro-bayo">
-                <p>
-                    Uno de los cerros con las mejores vistas de América Latina. De 1.782 m de altura, está rodeado
-                    de bosques que se suman a la magnífica vista del Lago Nahuel Huapi. La base del centro de esquí,
-                    se encuentra a 1.050 m.s.n.m.</p>
-                <p> El cerro ofrece actividades durante todo el año, sumado a una amplia oferta gastronómica en sus
-                    distintos paradores.
-                </p>
-            </article>
-        </section>
+        <article class="main__articulo manzano">
+            <h4>Puerto Manzano</h4>
+            <img class="main__img" src="../imagenes/manzano.jpg" alt="Manzano">
+            <p>
+                Es uno de los barrios en el que registra la mayor concentración de alojamientos. La arquitectura
+                armoniza con las espectaculares vistas que ofrece la Bahía de Manzano.
+                El trazado de sus calles, la frondosa arboleda, y la armonía entre la exquisita arquitectura
+                andina
+                y el paisaje, invitan a recorrerlo ya sea a pie o en auto.
+            </p>
+        </article>
+
+        <article class="main__articulo lagos ">
+            <h4>Ruta de los 7 lagos</h4>
+            <img class="main__img" src="../imagenes/sietelagos.png" alt="siete-lagos">
+            <p>
+                El nombre de Camino de los 7 lagos se debe al número de lagos que se pueden apreciar durante el
+                recorrido. Ordenados desde Villa La Angostura hacia San Martín de los Andes, los lagos que
+                conforman
+                el «Camino de los 7 Lagos» son: Lago Espejo, Lago Correntoso, Lago Escondido, Lago Villarino,
+                Lago
+                Falkner, Lago Machónico y Lago Lácar.
+            </p>
+        </article>
+
+        <article class="main__articulo correntoso">
+            <h4>Rio Correntoso</h4>
+            <img class="main__img" src="../imagenes/correntoso.jpg" alt="correntoso">
+            <p>
+                Una postal de Villa la Angostura! Compuesta por un río muy pequeño (el Correntoso) que nace en
+                el
+                lago Correntoso y desemboca en el lago Nahuel Huapi. Se dice que es uno de los ríos más cortos
+                del
+                mundo, ya que tiene una longitud total de unos 200 m dependiendo de las lluvias anuales.
+            </p>
+        </article>
+
+        <article class="main__articulo bayo">
+            <h4>Cerro Bayo</h4>
+            <img class="main__img" src="../imagenes/bayo.jpg" alt="cerro-bayo">
+            <p>
+                Uno de los cerros con las mejores vistas de América Latina. De 1.782 m de altura, está rodeado
+                de bosques que se suman a la magnífica vista del Lago Nahuel Huapi. La base del centro de esquí,
+                se encuentra a 1.050 m.s.n.m.
+                El cerro ofrece actividades durante todo el año, sumado a una amplia oferta gastronómica en sus
+                distintos paradores.
+            </p>
+        </article>
     </main>
     <!-- fin main-->
 
     <!-- footer-->
-    <footer>
-        <ul>
-            <li> <a href="../index.html">HOME</a></li>
-            <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
-            <li><a href="../pages/alojamientos.html">ALOJAMIENTOS</a></li>
-            <li><a href="../pages/galeria.html">GALERIA</a></A></li>
-            <li><a href="../pages/contacto.html">CONTACTO</a></A></li>
-        </ul>
+    <footer class="footer">
 
         <div>
-            <img src="../imagenes/vla-logo.png" alt="logo-vla">
+            <img src="../imagenes/vla-logo.png" alt="logo-vla" class="footer__logo">
         </div>
 
-        <address>
+        <address class="footer__adress">
             Secretaría de Turismo Municipal de Villa La Angostura.
             Av. Arrayanes 999 - Villa la Angostura - Neuquén.
             Tel: (0294) 4494 1112

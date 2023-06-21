@@ -42,14 +42,14 @@
     text-decoration: none;
 }
 
-.iconos {
+.header__iconos {
     display: none;
 }
 
 
 /*=============  HEADER DESKTOP================ */
 
-@media (min-width:1200px) {
+@media (min-width:1024px) {
     .header {
         display: flex;
         flex-direction: row;
@@ -60,7 +60,7 @@
         top: 0px;
     }
 
-    .iconos {
+    .header__iconos {
         display: flex;
     }
 
@@ -68,7 +68,7 @@
         font-size: 2rem;
     }
 
-    .iconos li,
+    .header__iconos li,
     .header__nav li {
         list-style-type: none;
         display: inline-block;
@@ -118,9 +118,18 @@
     color: #00072D;
 }
 
+/* ====ATRACTIVOS==== */
+.atractivos-banner {
+    background-image: url(../imagenes/banner-atractivos.jpg);
+}
+
+/* ====ALOJAMIENTOS==== */
+.alojamientos-banner {
+    background-image: url(../imagenes/Alojamientos.webp);
+}
 
 /* =======BANNER DESKTOP */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
     .banner,
     .banner-galeria {
@@ -146,7 +155,8 @@
     font-size: 1.2rem;
 }
 
-h3 {
+h3,
+h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #00072D;
@@ -196,22 +206,48 @@ h3 {
     margin-bottom: 1rem;
 }
 
-.galeria img {
+.galeria img,
+.main__img {
     width: 90%;
     height: 300px;
 }
 
+/* ====ALOJAMIENTOS===== */
+.main a {
+    text-decoration: none;
+}
+
+.main ul li {
+    display: none;
+}
+
+/* ====CONTACTO==== */
+.main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 3.5rem;
+    gap: 1rem;
+}
+
+
+
 /* ======MAIN DESKTOP======== */
 /* =====INDEX======= */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+
     .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 80vh;
+        grid-template-rows: auto 70vh;
         background-image: url(../imagenes/fondo.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        padding: 0 2rem 0 2rem;
+        padding: 0 2rem 2rem 2rem;
+        margin: 0 auto;
     }
 
     .contenedor-mapa {
@@ -222,8 +258,6 @@ h3 {
 
     .main__articulo {
         height: auto;
-        width: 85%;
-        margin: top 1rem;
         ;
     }
 
@@ -262,7 +296,62 @@ h3 {
         grid-row: 5/7;
     }
 
+    /* ====ATRACTIVOS==== */
+
+    .atractivos {
+        display: grid;
+        grid-template-areas:
+            "parrafo  parrafo"
+            "titulo titulo"
+            "bosque manzano"
+            "lagos lagos"
+            "correntoso bayo";
+        grid-template-columns: 80vh 80vh;
+        grid-template-rows: 25vh repeat(3, auto);
+        text-align: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-image: url(../imagenes/nieve.jpg);
+    }
+
+
+
+    .parrafo {
+        grid-area: parrafo;
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .bosque {
+        grid-area: bosque;
+        background-color: rgba(250, 235, 215, 0.463)
+    }
+
+    .lagos {
+        grid-area: lagos;
+        background-color: rgba(250, 235, 215, 0.463)
+    }
+
+    .manzano {
+        grid-area: manzano;
+        background-color: rgba(250, 235, 215, 0.463)
+    }
+
+    .correntoso {
+        grid-area: correntoso;
+        background-color: rgba(250, 235, 215, 0.463)
+    }
+
+    .bayo {
+        grid-area: bayo;
+        background-color: rgba(250, 235, 215, 0.463)
+    }
+
+
 }
+
 
 /* ======FOOTER=========*/
 
@@ -282,7 +371,7 @@ h3 {
 }
 
 /* =====FOOTER DESKTOP====== */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
     .footer {
         display: flex;

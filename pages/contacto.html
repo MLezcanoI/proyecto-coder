@@ -9,6 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Villa la Angostura</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Montserrat:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <!--FIN HEAD-->
 
@@ -17,28 +25,17 @@
 <body>
 
     <!-- inicio header -->
-    <header>
+    <header class="header">
 
         <!-- logo -->
         <div>
-            <a href=" ../index.html"> <img src="../imagenes/vla-logo.png" alt="logo-vla"> </a>
+            <h1>Turismo VLA</h1>
         </div>
         <!--fin logo -->
 
-        <!--Iconos de redes sociales - resta saber como agregarlos-->
-        <div>
-            <ul>
-                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"> Instagram </a> </li>
-                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"> Facebook
-                    </a> </li>
-                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> Youtube </a>
-                </li>
-            </ul>
-        </div>
-        <!-- fin Iconos de redes sociales - resta saber como agregarlos-->
 
         <!-- Nav-->
-        <nav>
+        <nav class="header__nav">
             <ul>
                 <li> <a href="../index.html">HOME</a></li>
                 <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
@@ -47,21 +44,35 @@
                 <li><a href="./contacto.html">CONTACTO</a></A></li>
             </ul>
         </nav>
-        <!--fin  Nav-->
+
+        <!--Iconos de redes sociales - resta saber como agregarlos-->
+        <div class="header__iconos">
+            <ul>
+                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"> <i class="bi bi-instagram"></i>
+                    </a> </li>
+                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"> <i
+                            class="bi bi-facebook"></i>
+                    </a> </li>
+                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> <i
+                            class="bi bi-youtube"></i> </a>
+                </li>
+            </ul>
+        </div>
+        <!-- fin Iconos de redes sociales - resta saber como agregarlos-->
+
 
     </header>
     <!--fin header-->
 
     <!--banner que contiene h1-->
-    <div>
-        <h1>CONTACTO</h1>
-        <img src="../imagenes/galeria8.jpg" alt="banner-home">
+    <div class="banner">
+        <h2>CONTACTO</h2>
     </div>
     <!--fin banner que contiene h1-->
 
     <!--Main-->
     <main>
-        <section>
+        <section class="main">
 
             <h2>Dejanos tu mensaje, te responderemos a la brevedad</h2>
 
@@ -94,20 +105,13 @@
     <!--Fin main-->
 
     <!--inicio footer-->
-    <footer>
-        <ul>
-            <li> <a href="../index.html">HOME</a></li>
-            <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
-            <li><a href="./alojamientos.html">ALOJAMIENTOS</a></li>
-            <li><a href="./galeria.html">GALERIA</a></A></li>
-            <li><a href="./contacto.html">CONTACTO</a></A></li>
-        </ul>
+    <footer class="footer">
 
         <div>
-            <img src="../imagenes/vla-logo.png" alt="logo-vla">
+            <img src="../imagenes/vla-logo.png" alt="logo-vla" class="footer__logo">
         </div>
 
-        <address>
+        <address class="footer__adress">
             Secretaría de Turismo Municipal de Villa La Angostura.
             Av. Arrayanes 999 - Villa la Angostura - Neuquén.
             Tel: (0294) 4494 1112
