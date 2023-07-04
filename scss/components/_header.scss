@@ -1,0 +1,55 @@
+.header {
+    @include header-footer;
+
+    &__nav ul {
+        list-style-type: none;
+        font-family: $ff-montserrat;
+        font-weight: $fw-600;
+
+        & li {
+            text-align: center;
+            padding: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+    }
+
+    &__iconos {
+        display: none;
+    }
+
+    @include desktop {
+        @include flexbox(space-between, center);
+        flex-direction: row;
+        position: sticky;
+        top: 0px;
+        align-content: center;
+
+        ul {
+            display: flex;
+        }
+
+        &__iconos {
+            display: flex;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+            }
+        }
+
+        &__nav {
+            display: flex;
+            gap: .5rem;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+            }
+        }
+
+        .bi {
+            font-size: 2rem;
+        }
+    }
+}

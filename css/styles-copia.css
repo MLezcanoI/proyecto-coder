@@ -60,10 +60,6 @@
         top: 0px;
     }
 
-    .header__iconos {
-        display: flex;
-    }
-
     .bi {
         font-size: 2rem;
     }

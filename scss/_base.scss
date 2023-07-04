@@ -1,0 +1,80 @@
+$ff-montserrat: 'Montserrat', sans-serif;
+$fw-600: 600;
+$bc-blue: #00072D;
+$padding: 1rem;
+$gap: 1.5rem;
+$c-blanco: white;
+$c-negro: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@mixin ff-encabezado {
+    font-family: $ff-montserrat;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $c-blanco;
+}
+
+@mixin textos {
+    font-family: 'Faustina', serif;
+    font-weight: 400;
+    color: $c-negro;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+@mixin barra-nav {
+    font-family: $ff-montserrat;
+    font-weight: 600;
+}
+
+@mixin header-footer {
+    background-color: $bc-blue;
+    color: $c-blanco;
+    padding: $padding;
+    @include flexbox();
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin flexbox($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+h1 {
+    @include ff-encabezado()
+}
+
+ul {
+    list-style-type: none;
+    gap: 1.2rem;
+}
+
+a {
+    color: $c-blanco;
+    text-decoration: none;
+}
+
+
+
+//declaraciones generales del sitio, ejemplo h1-2 p que se estilizan igual
+//estiquetas a por ejemplo
+
+//variables de familia tipofrafica
+//$ff-montserrat: "nombre de la fontfamily"
+
+//variables para colores
+//$c-blanco:#color
