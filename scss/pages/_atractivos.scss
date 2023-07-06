@@ -1,0 +1,49 @@
+
+@include desktop {
+.atractivos {
+    display: grid;
+    grid-template-areas:
+        "intro intro"
+        "bosque manzano"
+        "lagos lagos"
+        "correntoso bayo";
+    grid-template-columns: 80vh 80vh;
+    grid-template-rows: auto repeat(3, auto);
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+
+.intro {
+    grid-area: intro;
+    background-color: rgba(250, 235, 215, 0.463)
+}
+
+.bosque {
+    grid-area: bosque;
+    background-color: rgba(250, 235, 215, 0.463)
+}
+
+.lagos {
+    grid-area: lagos;
+    background-color: rgba(250, 235, 215, 0.463)
+}
+
+.manzano {
+    grid-area: manzano;
+    background-color: rgba(250, 235, 215, 0.463)
+}
+
+.correntoso {
+    grid-area: correntoso;
+    background-color: rgba(250, 235, 215, 0.463)
+}
+
+.bayo {
+    grid-area: bayo;
+    background-color: rgba(250, 235, 215, 0.463)
+}
+
+
+}

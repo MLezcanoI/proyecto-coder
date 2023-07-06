@@ -69,8 +69,9 @@ $margin-auto: 0 auto;
 @mixin fondo-main {
     background-image: url(../imagenes/fondo.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 0 2rem 2rem 2rem;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 2rem 2rem 2rem;
     margin: 0 auto;
 }
 
