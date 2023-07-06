@@ -1,0 +1,25 @@
+.tarjeta {
+    width: 90%;
+    height: auto;
+    margin: $margin-auto;
+    max-width: 550px;
+    background-color: #2139be69;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.918);
+
+    &__titulo {
+        padding-top: .5rem;
+    }
+
+    &__texto {
+        padding: 1rem 1rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: 60vh;
+        border-radius: 5px;
+    }
+
+
+}

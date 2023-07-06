@@ -7,6 +7,7 @@ $c-blanco: white;
 $c-negro: black;
 $text-center: center;
 $h-auto: auto;
+$margin-auto: 0 auto;
 
 * {
     margin: 0;
@@ -21,7 +22,7 @@ $h-auto: auto;
     font-weight: 900;
     font-size: 1.5rem;
     color: $c-blanco;
-    margin: .5rem .5rem;
+    margin: .2rem .2rem;
     line-height: 1.5rem;
 }
 
@@ -29,7 +30,7 @@ $h-auto: auto;
     font-family: 'Faustina', serif;
     font-weight: 400;
     color: $c-negro;
-    margin: 1rem 2rem;
+    margin-bottom:1rem;
     text-align: justify;
 }
 
@@ -51,6 +52,12 @@ $h-auto: auto;
     display: flex;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
 }
 
 @mixin desktop {
@@ -85,6 +92,10 @@ ul {
 a {
     color: $c-blanco;
     text-decoration: none;
+}
+
+p {
+    @include textos()
 }
 
 

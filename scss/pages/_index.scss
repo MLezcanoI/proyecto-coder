@@ -5,6 +5,9 @@
     text-align: $text-center;
     line-height: 1.2rem;
     font-size: 1.2rem;
+    gap: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     &__articulo p {
         @include textos;
