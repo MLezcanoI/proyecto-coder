@@ -1,0 +1,27 @@
+.footer {
+    @include header-footer;
+
+    &__logo {
+        border-radius: 75px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__adress {
+        @include textos;
+        color: $c-blanco;
+        font-size: 1.3rem;
+        text-align: $text-center;
+    }
+
+    @include desktop {
+        @include flexbox(space-around, center);
+        flex-direction: row;
+
+        &__adress {
+            width: 50%;
+        }
+    }
+}

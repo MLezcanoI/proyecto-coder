@@ -1,0 +1,38 @@
+.banner {
+    @include flexbox(center, center);
+    background-image: url(../imagenes/vla-bannerhome.webp);
+    height: 50vh;
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+    color: #FDFFFC;
+    text-align: center;
+    font-size: 1rem;
+    font-family: $ff-montserrat;
+    font-weight: $fw-600;
+
+    @include desktop {
+        height: 75vh;
+        background-size: 100% 75vh;
+        font-size: 2rem;
+
+        h2{
+            opacity:0.45;
+        }
+    }
+
+    }
+
+
+.banner-galeria {
+    @extend .banner;
+    background-image: url(../imagenes/banner-galeria.webp);
+    color: #00072D;
+}
+
+.atractivos-banner {
+    background-image: url(../imagenes/banner-atractivos.jpg);
+}
+
+.alojamientos-banner {
+    background-image: url(../imagenes/Alojamientos.webp);
+}

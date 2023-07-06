@@ -5,6 +5,8 @@ $padding: 1rem;
 $gap: 1.5rem;
 $c-blanco: white;
 $c-negro: black;
+$text-center: center;
+$h-auto: auto;
 
 * {
     margin: 0;
@@ -19,13 +21,16 @@ $c-negro: black;
     font-weight: 900;
     font-size: 1.5rem;
     color: $c-blanco;
+    margin: .5rem .5rem;
+    line-height: 1.5rem;
 }
 
 @mixin textos {
     font-family: 'Faustina', serif;
     font-weight: 400;
     color: $c-negro;
-    margin: 1rem 3rem 1rem 3rem;
+    margin: 1rem 2rem;
+    text-align: justify;
 }
 
 @mixin barra-nav {
@@ -54,8 +59,22 @@ $c-negro: black;
     }
 }
 
+@mixin fondo-main {
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 2rem 2rem 2rem;
+    margin: 0 auto;
+}
+
 h1 {
     @include ff-encabezado()
+}
+
+h3,
+h4 {
+    @extend h1;
+    color: $c-negro;
 }
 
 ul {
