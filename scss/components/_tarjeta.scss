@@ -3,9 +3,10 @@
     height: auto;
     margin: $margin-auto;
     max-width: 550px;
-    background-color: #2139be69;
-    border-radius: 1.5rem;
+    background-color: rgba(250, 235, 215, 0.463);
+    border-radius: 2rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.918);
+    border-top: 3.5px solid black;
 
     &__titulo {
         padding-top: .5rem;
@@ -19,6 +20,7 @@
         width: 100%;
         height: 60vh;
         border-radius: 5px;
+        border-top: 3px solid black;
     }
 
 

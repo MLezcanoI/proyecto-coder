@@ -6,8 +6,11 @@
     line-height: 1.2rem;
     font-size: 1.2rem;
     gap: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
+    max-width: 1450px;
+    margin: 0 auto;
+    
+
 
     &__articulo p {
         @include textos;
@@ -18,7 +21,7 @@
         flex-direction: column;
         align-items: center;
         text-align: $text-center;
-        height: 60vh;
+        height: $h-60vh;
     }
 
     & .mapa {
@@ -42,20 +45,23 @@
             grid-column: 1/span2;
             grid-row: 2/span1;
             height: $h-auto;
+            background-color: rgba(250, 235, 215, 0.463);
+            border-radius: 2rem;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.918);
+            border-top: 3.5px solid black;
         }
 
         & .mapa {
             margin-top: 1rem;
-            height: 60vh;
+            height: $h-60vh;
         }
 
     }
 
 
-
-
-
-
-
-
 }
+
+
+
+
+
