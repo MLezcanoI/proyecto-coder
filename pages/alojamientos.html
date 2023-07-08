@@ -8,8 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alojamientos | Villa la Angostura</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,22 +24,43 @@
 
 <body>
     <!--Header-->
-    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <img class="w-25" src="./imagenes/vla-logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled">Disabled</a>
-                </div>
-            </nav>
+    <header class="header">
+
+        <!--------- logo --------->
+        <div>
+            <a href="../index.html">
+                <h1>Turismo VLA</h1>
+            </a>
         </div>
+        <!---------fin logo --------->
+
+        <!----------- Nav------------>
+        <nav class="header__nav">
+            <ul>
+                <li> <a href="../index.html">HOME</a></li>
+                <li> <a href="./atractivos.html">ATRACTIVOS</a></li>
+                <li> <a href="./alojamientos.html">ALOJAMIENTOS</a></li>
+                <li> <a href="./galeria.html">GALERIA</a></A></li>
+                <li> <a href="./contacto.html">CONTACTO</a></A></li>
+            </ul>
+        </nav>
+        <!----------fin  Nav---------->
+
+        <!--Iconos de redes sociales - -->
+        <div class="header__iconos">
+            <ul>
+                <li> <a href="https://www.instagram.com/turismovla/" target="_blank"> <i
+                            class="bi bi-instagram"></i></a> </li>
+                <li> <a href="https://www.facebook.com/turismovillalaangostura/?locale=es_LA" target="_blank"><i
+                            class="bi bi-facebook"></i>
+                    </a> </li>
+                <li> <a href="https://www.youtube.com/@VillaLaAngosturaTurismo/videos" target="_blank"> <i
+                            class="bi bi-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- fin Iconos de redes sociales-->
+
     </header>
 
     <!--Fin Header-->
@@ -51,24 +70,23 @@
     <!--fin banner y h1-->
 
     <!--Main-->
-    <main>
 
-        <div class="banner alojamientos-banner">
-            <h1 class="display-4 text-center fw-bold color-h1">ALOJAMIENTOS</h1>
-        </div>
 
-        <section class="container bg-color p-3 mt-3">
+    <div class="banner alojamientos-banner">
+        <h2>ALOJAMIENTOS</h2>
+    </div>
 
-            <article class="row flex-row-reverse">
-                <div class="col-12 col-md-6">
-                    <img class="w-100" src="../imagenes/resort-manzano.jpg" alt="imagen-resort">
-                </div>
+    <main class="main">
+        <section>
 
-                <div class="col-12 col-md-6 d-flex-column">
+            <article>
+                <div class="tarjeta">
+                    <h2 class="tarjeta__titulo">Bahia Manzano Resort</h2>
+                    <div>
+                        <img class="tarjeta__img" src="../imagenes/resort-manzano.jpg" alt="imagen-resort">
+                    </div>
 
-                    <h2 class="text-center">Bahia Manzano Resort</h2>
-
-                    <p class="text-center m-5 ">
+                    <p class="tarjeta__texto">
                         Localizado en una bahía frente al lago Nahuel Huapi y rodeado de naturaleza, el Resort ofrece
                         amplia
                         variedad de servicios y amenidades para disfrutar durante todo el año. Cuenta con unidades tipo
@@ -76,28 +94,29 @@
                     </p>
 
                     <ul>
-                        <li>
-                            <a href="https://www.instagram.com/bahiamanzanoresortsclub/" target="_blank"> Instagram </a>
+                        <li class="tarjeta_icono">
+                            <a href="https://www.instagram.com/bahiamanzanoresortsclub/" target="_blank"> <i
+                                    class="bi bi-facebook"> </i> </a>
                         </li>
-                        <li>
-                            <a href="https://www.facebook.com/BahiaManzanoOficial" target="_blank">Facebook</a>
+                        <li class="tarjeta_icono">
+                            <a href="https://www.facebook.com/BahiaManzanoOficial" target="_blank"><i
+                                    class="bi bi-facebook"></i></a>
                         </li>
                     </ul>
                 </div>
         </section>
 
 
-        <section class="container">
-            <article class="row">
-                <div class="col-12 col-md-6">
-                    <a href="https://correntoso.com/" target="_blank">
-                        <h2>Correntoso Lake & River Hotel</h2>
-                    </a>
-                    <img class="w-100" src="../imagenes/hotel-correntoso.jpg" alt="hotel-correntoso">
-                </div>
+        <section">
+            <article>
+                <div class="tarjeta">
+                    <h2 class="tarjeta__titulo">Correntoso Lake & River Hotel</h2>
 
-                <div class="col-12 col-md-6">
-                    <p class="text-center">
+                    <div>
+                        <img class="tarjeta__img" src="../imagenes/hotel-correntoso.jpg" alt="hotel-correntoso">
+                    </div>
+
+                    <p class="tarjeta__texto">
                         Fundado en 1917 por Primo Capraro y Rosa Maier, Correntoso nació como un refugio para
                         pescadores y
                         creció hasta convertirse en un exponente perfecto de la hotelería. Hoy, es capaz de cumplir
@@ -108,108 +127,118 @@
                     </p>
 
                     <ul>
-                        <li>
-                            <a href="https://www.instagram.com/hotelcorrentoso/" target="_blank"> Instagram </a>
+                        <li class="tarjeta_icono">
+                            <a href="https://www.instagram.com/hotelcorrentoso/" target="_blank"> <i
+                                    class="bi bi-instagram"></i> </a>
                         </li>
-                        <li>
-                            <a href="https://www.facebook.com/correntoso" target="_blank">Facebook</a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-
-        <section class="container">
-            <article class="row">
-                <div class="col-12 col-md-6">
-                    <a class="main__img" href="http://www.elmercadoangostura.com.ar/index.html" target="_blank">
-                        <h2>Departamentos de el Mercado</h2>
-                    </a>
-                    <img class="w-100" src="../imagenes/mercado-vla.jpg" alt="mercado-vla">
-                </div>
-                <div class="col-12 col-md-6">
-                    <p class="text-center">
-                        Departamentos tipo loft de estilo moderno, hechos en su mayor parte con materiales reciclados.
-                        Respetando el clásico estilo arquitectónico de la ciudad de madera y piedra, hoy el Mercado
-                        intenta
-                        recuperar esos tiempos gloriosos. Lo antiguo y lo nuevo se unen para generar un nuevo atractivo
-                        turístico del que está hablando todo el mundo que llega a esta ciudad.</p>
-
-
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/elmercadovla/" target="_blank"> Instagram </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/elmercadovillalaangostura" target="_blank">Facebook</a>
+                        <li class="tarjeta_icono">
+                            <a href="https://www.facebook.com/correntoso" target="_blank"><i
+                                    class="bi bi-facebook"></i></a>
                         </li>
                     </ul>
                 </div>
             </article>
-        </section>
+            </section>
 
-        <section class="container">
-            <article class="row">
-                <div class="col-12 col-md-6">
-                    <a href="http://hosteriapuertosur.com.ar/puerto/" target="_blank">
-                        <h2>Hostería Puerto Sur</h2>
-                    </a>
-                    <img class="w-100" src="../imagenes/hosteria-puerto-sur.jpeg" alt="hosteria-pueerto-sur">
-                </div>
-                <div class="col-12 col-md-6">
-                    <p class="text-center">
-                        Ubicación privilegiada en la Península de Puerto Manzano, sumado al diseño del lugar, te
-                        permitirá
-                        disfrutar de una postal majestuosa y una imponente vista a los cerros desde cualquier parte de
-                        la
-                        hostería.
-                        Cuenta con 14 habitaciones dobles, todas con frigo-bar, caja de seguridad y vista al lago,
-                        donde
-                        podrás relajarte en un hidromasaje doble, rodeado de grandes ventanales y techo vidriado.</p>
 
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/puertosurhosteria/" target="_blank"> Instagram </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/people/Recepci%C3%B3n-Hoster%C3%ADa/100091343533748/"
-                                target="_blank">Facebook</a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </section>
+            <section>
+                <article>
+                    <div class="tarjeta">
+                        <h2 class="tarjeta__titulo">Departamentos de el Mercado</h2>
+                        <div>
+                            <img class="tarjeta__img" src="../imagenes/mercado-vla.jpg" alt="mercado-vla">
+                        </div>
 
-        <section class="container">
-            <article class="row">
-                <div class="col-12 col-md-6">
-                    <a href="https://naranjo-en-flor.hotelesenpatagonia.com/es/#main" target="_blank">
-                        <h2>Hostería Naranjo en Flor</h2>
-                    </a>
-                    <img class="w-100" src="../imagenes/naranjo-flor.jpg" alt="naranjo-flor">
-                </div>
+                        <p class="tarjeta__texto">
+                            Departamentos tipo loft de estilo moderno, hechos en su mayor parte con materiales
+                            reciclados.
+                            Respetando el clásico estilo arquitectónico de la ciudad de madera y piedra, hoy el Mercado
+                            intenta
+                            recuperar esos tiempos gloriosos. Lo antiguo y lo nuevo se unen para generar un nuevo
+                            atractivo
+                            turístico del que está hablando todo el mundo que llega a esta ciudad.</p>
 
-                <div class="col-12 col-md-6">
-                    <p class="text-center">
-                        La Hostería Naranjo en Flor, una cálida hostería de 8 habitaciones en total, esta enclavada en
-                        la
-                        montaña en el barrio residencial Puerto Manzano, frente al Lago Nahuel Huapi sobre Bahía
-                        Manzano, a
-                        6 km del centro de Villa La Angostura y a 2 km del acceso al Cerro Bayo.
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/hosterianaranjo/?hl=es-la" target="_blank"> Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/groups/121046351270908/" target="_blank">Facebook</a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </section>
+
+                        <ul>
+                            <li class="tarjeta_icono">
+                                <a href="https://www.instagram.com/elmercadovla/" target="_blank"> <i
+                                        class="bi bi-instagram"></i></a>
+                            </li>
+                            <li class="tarjeta_icono">
+                                <a href="https://www.facebook.com/elmercadovillalaangostura" target="_blank"><i
+                                        class="bi bi-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div class="tarjeta">
+                        <h2 class="tarjeta__titulo">Hostería Puerto Sur</h2>
+                        </a>
+                        <div>
+                            <img class="tarjeta__img" src="../imagenes/hosteria-puerto-sur.jpeg"
+                                alt="hosteria-pueerto-sur">
+                        </div>
+
+                        <p class="tarjeta__texto">
+                            Ubicación privilegiada en la Península de Puerto Manzano, sumado al diseño del lugar, te
+                            permitirá
+                            disfrutar de una postal majestuosa y una imponente vista a los cerros desde cualquier parte
+                            de
+                            la
+                            hostería.
+                            Cuenta con 14 habitaciones dobles, todas con frigo-bar, caja de seguridad y vista al lago,
+                            donde
+                            podrás relajarte en un hidromasaje doble, rodeado de grandes ventanales y techo vidriado.
+                        </p>
+
+                        <ul>
+                            <li class="tarjeta_icono">
+                                <a href="https://www.instagram.com/puertosurhosteria/" target="_blank"> <i
+                                        class="bi bi-instagram"></i> </a>
+                            </li>
+                            <li class="tarjeta_icono">
+                                <a href="https://www.facebook.com/people/Recepci%C3%B3n-Hoster%C3%ADa/100091343533748/"
+                                    target="_blank"> <i class="bi bi-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div class="tarjeta">
+                        <h2 class="tarjeta__titulo">Hostería Naranjo en Flor</h2>
+                        <div>
+                            <img class="tarjeta__img" src="../imagenes/naranjo-flor.jpg" alt="naranjo-flor">
+                        </div>
+
+                        <p class="tarjeta__texto">
+                            La Hostería Naranjo en Flor, una cálida hostería de 8 habitaciones en total, esta enclavada
+                            en
+                            la
+                            montaña en el barrio residencial Puerto Manzano, frente al Lago Nahuel Huapi sobre Bahía
+                            Manzano, a
+                            6 km del centro de Villa La Angostura y a 2 km del acceso al Cerro Bayo.
+                        </p>
+                        <ul>
+                            <li class="tarjeta_icono">
+                                <a href="https://www.instagram.com/hosterianaranjo/?hl=es-la" target="_blank"> <i
+                                        class="b bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="tarjeta_icono">
+                                <a href="https://www.facebook.com/groups/121046351270908/" target="_blank"><i
+                                        class="bi bi-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
     </main>
     <!--Fin Main-->
 
@@ -229,9 +258,6 @@
     </footer>
     <!--fin footer-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
 
 </body>
 <!--FIN BODY-->

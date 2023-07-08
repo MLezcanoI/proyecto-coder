@@ -6,11 +6,8 @@
     line-height: 1.2rem;
     font-size: 1.2rem;
     gap: 1.2rem;
-    margin: 1rem;
+    margin: 1rem auto;
     max-width: 1450px;
-    margin: 0 auto;
-    
-
 
     &__articulo p {
         @include textos;
@@ -60,8 +57,3 @@
 
 
 }
-
-
-
-
-
