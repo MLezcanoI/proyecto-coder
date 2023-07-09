@@ -1,3 +1,66 @@
-.tarjeta__icono {
-    color:black;
+.tarjeta {
+    overflow: hidden;
+
+    &__iconos {
+        @include flexbox();
+        gap: 2rem;
+        background-color: $bc-blue;
+        padding: .3rem;
+
+        &--item {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include desktop {
+    .alojamientos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+
+        .tarjeta {
+            max-width: 750px;
+        }
+
+        &__contain {
+            display: grid;
+            grid-template-columns: 350px 350px;
+            grid-template-rows: 50px 40vh;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+
+            img {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                border-top: none;
+                width: 90%;
+                max-width: 350px;
+                height: 35vh;
+            }
+
+            p {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                padding: 0 2.3rem;
+
+            }
+
+            ul {
+                grid-row: 3/4;
+                grid-column: 1/3;
+                background-color: rgba(250, 235, 215, 0.037);
+
+                li a {
+                    color: $c-negro;
+                }
+            }
+        }
+
+    }
 }

@@ -72,6 +72,9 @@ p {
   .header ul {
     display: flex;
   }
+  .header ul li:hover {
+    box-shadow: 0px 2px 4px white;
+  }
   .header__iconos {
     display: flex;
   }
@@ -90,6 +93,10 @@ p {
   .header .bi {
     font-size: 2rem;
   }
+  .header .bi:hover {
+    color: blueviolet;
+    font-size: 2.1rem;
+  }
 }
 
 .banner, .banner-galeria {
@@ -98,8 +105,10 @@ p {
   align-items: center;
   background-image: url(../imagenes/vla-bannerhome.webp);
   height: 50vh;
-  background-size: 100% 50vh;
+  width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: #FDFFFC;
   text-align: center;
   font-size: 1rem;
@@ -108,7 +117,7 @@ p {
 }
 @media (min-width: 1024px) {
   .banner, .banner-galeria {
-    height: 75vh;
+    height: 65vh;
     background-size: 100% 75vh;
     font-size: 2rem;
   }
@@ -388,8 +397,62 @@ p {
   color: white;
 }
 
-.tarjeta__icono {
-  color: black;
+.tarjeta {
+  overflow: hidden;
+}
+.tarjeta__iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #00072D;
+  padding: 0.3rem;
+}
+.tarjeta__iconos--item {
+  font-size: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .alojamientos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .alojamientos .tarjeta {
+    max-width: 750px;
+  }
+  .alojamientos__contain {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 50px 40vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .alojamientos__contain h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .alojamientos__contain img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-top: none;
+    width: 90%;
+    max-width: 350px;
+    height: 35vh;
+  }
+  .alojamientos__contain p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0 2.3rem;
+  }
+  .alojamientos__contain ul {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color: rgba(250, 235, 215, 0.037);
+  }
+  .alojamientos__contain ul li a {
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
