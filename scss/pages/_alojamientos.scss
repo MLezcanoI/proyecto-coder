@@ -21,6 +21,11 @@
 
         .tarjeta {
             max-width: 750px;
+
+            &:hover {
+                transform: rotate(360deg);
+                transition: 0.8s;
+            }
         }
 
         &__contain {
