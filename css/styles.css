@@ -113,7 +113,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .banner, .banner-galeria {
     height: 65vh;
     background-size: 100% 75vh;

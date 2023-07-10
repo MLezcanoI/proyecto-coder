@@ -12,7 +12,7 @@
     font-family: $ff-montserrat;
     font-weight: $fw-600;
 
-    @include desktop {
+    @include tablet {
         height: 65vh;
         background-size: 100% 75vh;
         font-size: 2rem;
