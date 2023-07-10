@@ -1,12 +1,12 @@
 .main {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     background-color: $c-blanco;
     text-align: $text-center;
     line-height: 1.2rem;
     font-size: 1.2rem;
-    gap: 1.2rem;
-    margin: 1rem auto;
+    gap: $gap;
+    margin: $margin-auto;
+    margin-bottom: 1rem;
     max-width: 1450px;
 
     &__articulo p {
@@ -14,8 +14,7 @@
     }
 
     & .contenedor-mapa {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         text-align: $text-center;
         height: $h-60vh;
@@ -42,7 +41,7 @@
             grid-column: 1/span2;
             grid-row: 2/span1;
             height: $h-auto;
-            background-color: rgba(250, 235, 215, 0.463);
+            background-color: $bc-tarjeta;
             border-radius: 2rem;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.918);
             border-top: 3.5px solid black;

@@ -1,14 +1,20 @@
 $ff-montserrat: 'Montserrat', sans-serif;
+$ff-faustina: 'Faustina', serif;
 $fw-600: 600;
+$fw-400: 400;
+$fw-900: 900;
 $bc-blue: #00072D;
+$bc-tarjeta: rgba(250, 235, 215, 0.463);
 $padding: 1rem;
-$gap: 1.5rem;
+$margin-auto: 0 auto;
+$b-radius: 5px;
+$gap: 1.2rem;
 $c-blanco: white;
 $c-negro: black;
 $text-center: center;
 $h-auto: auto;
 $h-60vh: 60vh;
-$margin-auto: 0 auto;
+
 
 * {
     margin: 0;
@@ -23,16 +29,16 @@ $margin-auto: 0 auto;
 
 @mixin ff-encabezado {
     font-family: $ff-montserrat;
-    font-weight: 900;
-    font-size: 1.5rem;
+    font-weight: $fw-900;
+    font-size: 1.3rem;
     color: $c-blanco;
     margin: .2rem .2rem;
     line-height: 1.5rem;
 }
 
 @mixin textos {
-    font-family: 'Faustina', serif;
-    font-weight: 400;
+    font-family: $ff-faustina;
+    font-weight: $fw-400;
     color: $c-negro;
     text-align: justify;
 }
@@ -42,6 +48,17 @@ $margin-auto: 0 auto;
     font-weight: 600;
 }
 
+@mixin flexbox($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin header-footer {
     background-color: $bc-blue;
     color: $c-blanco;
@@ -49,12 +66,6 @@ $margin-auto: 0 auto;
     @include flexbox();
     flex-direction: column;
     gap: $gap;
-}
-
-@mixin flexbox($justify: center, $align: center) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
 }
 
 @mixin tablet {
@@ -75,7 +86,7 @@ $margin-auto: 0 auto;
     background-size: cover;
     background-position: center;
     padding: 1rem 2rem 2rem 2rem;
-    margin: 0 auto;
+    margin: $margin-auto;
 }
 
 h1 {
@@ -90,7 +101,7 @@ h4 {
 
 ul {
     list-style-type: none;
-    gap: 1.2rem;
+    gap: $gap;
 }
 
 a {

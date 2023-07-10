@@ -2,15 +2,15 @@
     @include textos;
     max-width: 650px;
     margin: $margin-auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
+    padding: $padding;
+    background-color: $c-blanco;
+    border-radius: $b-radius;
     @include fondo-main;
 
 
     h3 {
-        text-align: center;
-        padding-bottom: 1.5rem;
+        text-align: $text-center;
+        padding-bottom: $padding;
     }
 
     &__campo {
@@ -20,10 +20,9 @@
     &__boton {
         padding: 10px 20px;
         background-color: $bc-blue;
-        color: #fff;
+        color: $c-blanco;
         border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        border-radius: $b-radius;
         text-align: center;
 
 
@@ -44,7 +43,7 @@
         width: 100%;
         padding: .5rem;
         border: 1px solid $bc-blue;
-        border-radius: 5px;
+        border-radius: $b-radius;
     }
 
     .novedades {

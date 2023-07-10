@@ -1,49 +1,48 @@
-
 @include desktop {
-.atractivos {
-    display: grid;
-    grid-template-areas:
-        "intro intro"
-        "bosque manzano"
-        "lagos lagos"
-        "correntoso bayo";
-    grid-template-columns: 80vh 80vh;
-    grid-template-rows: auto repeat(3, auto);
-    text-align: center;
-    justify-content: center;
-    gap: 1.5rem;
-    
-}
+    .atractivos {
+        display: grid;
+        grid-template-areas:
+            "intro intro"
+            "bosque manzano"
+            "lagos lagos"
+            "correntoso bayo";
+        grid-template-columns: 80vh 80vh;
+        grid-template-rows: auto repeat(3, auto);
+        text-align: $text-center;
+        justify-content: center;
+        gap: $gap;
 
-.intro {
-    grid-area: intro;
-    background-color: rgba(250, 235, 215, 0.463)
-}
+    }
 
-.bosque {
-    grid-area: bosque;
-    background-color: rgba(250, 235, 215, 0.463)
-}
+    .intro {
+        grid-area: intro;
+        background-color: $bc-tarjeta
+    }
 
-.lagos {
-    grid-area: lagos;
-    background-color: rgba(250, 235, 215, 0.463)
-}
+    .bosque {
+        grid-area: bosque;
+        background-color: $bc-tarjeta;
+    }
 
-.manzano {
-    grid-area: manzano;
-    background-color: rgba(250, 235, 215, 0.463)
-}
+    .lagos {
+        grid-area: lagos;
+        background-color: $bc-tarjeta;
+    }
 
-.correntoso {
-    grid-area: correntoso;
-    background-color: rgba(250, 235, 215, 0.463)
-}
+    .manzano {
+        grid-area: manzano;
+        background-color: $bc-tarjeta;
+    }
 
-.bayo {
-    grid-area: bayo;
-    background-color: rgba(250, 235, 215, 0.463)
-}
+    .correntoso {
+        grid-area: correntoso;
+        background-color: $bc-tarjeta;
+    }
+
+    .bayo {
+        grid-area: bayo;
+        background-color: $bc-tarjeta;
+    }
 
 
 }
