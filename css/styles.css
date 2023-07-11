@@ -378,6 +378,8 @@ p {
 }
 .contacto__boton:hover {
   background-color: blueviolet;
+  transform: scale(1.1);
+  transition: 1s;
 }
 .contacto label {
   display: block;
@@ -391,6 +393,13 @@ p {
   padding: 0.5rem;
   border: 1px solid #00072D;
   border-radius: 5px;
+}
+.contacto input[type=text]:hover,
+.contacto input[type=email]:hover,
+.contacto textarea:hover {
+  box-shadow: 5px 5px 10px #00072D;
+  transform: scale(1.1);
+  transition: 1s;
 }
 .contacto .novedades {
   display: flex;
@@ -425,7 +434,7 @@ p {
   }
   .alojamientos .tarjeta:hover {
     transform: rotate(360deg);
-    transition: 0.8s;
+    transition: 1s;
   }
   .alojamientos__contain {
     display: grid;
