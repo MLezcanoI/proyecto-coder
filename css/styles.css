@@ -388,7 +388,7 @@ p {
 .contacto input[type=text],
 .contacto input[type=email],
 .contacto textarea {
-  width: 100%;
+  width: 90%;
   padding: 0.5rem;
   border: 1px solid #00072D;
   border-radius: 5px;
