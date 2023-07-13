@@ -9,6 +9,8 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.918);
     border-top: 3.5px solid black;
     border-left: 3px solid $bc-blue;
+    
+
 
     &__titulo {
         padding-top: .5rem;
@@ -23,6 +25,7 @@
         height: 45vh;
         border-radius: 5px;
         border-top: 3px solid black;
+        object-fit: cover;
     }
 
 

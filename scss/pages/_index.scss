@@ -35,6 +35,12 @@
 
         &__articulo {
             height: $h-auto;
+            scale: 0.8;
+
+            &:hover {
+        scale: 1;
+        transition: 1s;
+    }
         }
 
         & .contenedor-mapa {

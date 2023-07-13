@@ -197,6 +197,7 @@ p {
   height: 45vh;
   border-radius: 5px;
   border-top: 3px solid black;
+  object-fit: cover;
 }
 
 .main {
@@ -242,6 +243,11 @@ p {
   }
   .main__articulo {
     height: auto;
+    scale: 0.8;
+  }
+  .main__articulo:hover {
+    scale: 1;
+    transition: 1s;
   }
   .main .contenedor-mapa {
     grid-column: 1/span2;
