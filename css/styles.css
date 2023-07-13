@@ -10,7 +10,6 @@ h4 {
   font-weight: 900;
   font-size: 1.3rem;
   color: white;
-  margin: 0.2rem 0.2rem;
   line-height: 1.5rem;
 }
 
@@ -191,7 +190,7 @@ p {
   padding-top: 0.5rem;
 }
 .tarjeta__texto {
-  padding: 1rem 1rem;
+  padding: 0.8rem 1rem;
 }
 .tarjeta__img {
   width: 100%;
