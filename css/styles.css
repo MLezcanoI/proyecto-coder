@@ -111,6 +111,7 @@ p {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .banner, .banner-galeria {
@@ -249,6 +250,7 @@ p {
     background-position: center;
     padding: 1rem 2rem 2rem 2rem;
     margin: 0 auto;
+    object-fit: cover;
   }
   .main__articulo {
     height: auto;
@@ -327,6 +329,7 @@ p {
   height: 300px;
   max-width: 450px;
   padding-bottom: 1.2rem;
+  object-fit: cover;
 }
 @media (min-width: 1024px) {
   .galeria {
@@ -374,6 +377,7 @@ p {
   background-position: center;
   padding: 1rem 2rem 2rem 2rem;
   margin: 0 auto;
+  object-fit: cover;
 }
 .contacto h3 {
   text-align: center;

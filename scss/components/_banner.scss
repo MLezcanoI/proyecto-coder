@@ -11,6 +11,7 @@
     font-size: 1rem;
     font-family: $ff-montserrat;
     font-weight: $fw-600;
+    object-fit: cover;
 
     @include tablet {
         height: 65vh;
