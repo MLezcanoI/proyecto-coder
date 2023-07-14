@@ -452,12 +452,12 @@ p {
     position: relative;
     opacity: 0.3;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.2s ease;
+    transition: opacity 0.3s, transform 0.2s;
   }
   .alojamientos .tarjeta:hover {
     opacity: 1;
     transform: translateY(0);
-    transition: 3s;
+    transition: opacity 1.5s, transform 0.5s;
   }
   .alojamientos__contain {
     display: grid;
