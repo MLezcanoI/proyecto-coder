@@ -1,6 +1,6 @@
 .banner {
     @include flexbox(center, center);
-    background-image: url(../../imagenes/vla-bannerhome.webp);
+    background-image: url(../imagenes/vla-bannerhome.webp);
     height: 40vh;
     width: 100%;
     background-size: cover;
@@ -29,17 +29,17 @@
 
 .banner-galeria {
     @extend .banner;
-    background-image: url(../../imagenes/manzano.jpg);
+    background-image: url(../imagenes/manzano.jpg);
 }
 
 .atractivos-banner {
-    background-image: url(../../imagenes/banner-atractivos.jpg);
+    background-image: url(../imagenes/banner-atractivos.jpg);
 }
 
 .alojamientos-banner {
-    background-image: url(../../imagenes/Alojamientos.webp);
+    background-image: url(../imagenes/Alojamientos.webp);
 }
 
 .contacto-banner {
-    background-image: url(../../imagenes/galeria8.jpg);
+    background-image: url(../imagenes/galeria8.jpg);
 }
